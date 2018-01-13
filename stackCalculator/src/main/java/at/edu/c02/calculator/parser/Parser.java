@@ -79,7 +79,7 @@ public class Parser {
 		else if ("-".equals(value))
 			return Operation.sub;
 		else if ("%".equals(value))
-			return Operation.div;
+			return Operation.mod;
 			
 		
 		throw new CalculatorException("Unsuppoted Operation");
