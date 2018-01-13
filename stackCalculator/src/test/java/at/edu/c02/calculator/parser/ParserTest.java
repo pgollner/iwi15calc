@@ -34,9 +34,9 @@ public class ParserTest {
 		Parser parser = new Parser(cal);
 		parser.parse(new File("src/test/resources/test01.xml"));
 		
-		verify(cal).push(1.0);
-		verify(cal).push(2.0);
-		verify(cal).perform(Operation.add);
+		verify(cal).push(2);
+		verify(cal).push(4);
+		verify(cal).perform(Operation.mod);
 
 		verifyNoMoreInteractions(cal);
 	}
